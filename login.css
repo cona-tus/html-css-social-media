@@ -1,38 +1,73 @@
 .login {
-  max-width: 80rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  background-color: var(--color--white);
-  border-radius: 1.4rem;
+  max-width: 80%;
+  height: 80%;
+  display: flex;
+  background-color: var(--color--dark-gray);
+  border-radius: 1rem;
   overflow: hidden;
 }
 
-.login .login-container {
+/* background */
+.login .login-background {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 50%;
+  background: rgb(0, 128, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 128, 255, 1) 0%,
+    rgba(111, 250, 204, 1) 100%
+  );
+  padding: 0 4em;
+  color: var(--color--white);
+}
+
+.login .login-background .title {
+  font-family: var(--font--point);
+  font-size: var(--font--medium);
+  font-weight: var(--weight--medium);
+  margin-bottom: 2rem;
+}
+
+.login .login-background .subtitle {
+  font-size: var(--font--regular);
+  font-weight: var(--weight--medium);
+  margin-bottom: 1rem;
+}
+
+.login .login-background .description {
+  font-size: var(--font--small);
+  font-weight: var(--weight--regular);
+}
+
+.login .login-container {
   width: 100%;
   height: 100%;
-  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 50%;
+  padding: 0 4em;
 }
 
 .login .login-container .login-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
 }
 
-.login .login-container .login-header .logo {
-  width: 3rem;
+.login .login-container .login-header .logo-img {
+  width: 38px;
 }
 
 .login .login-container .login-header .logo-title {
-  color: var(--color--black);
+  color: var(--color--white);
   font-family: var(--font--point);
-  font-size: var(--font--large);
-  font-weight: var(--weight--bold);
-  letter-spacing: -4px;
+  font-size: var(--font--medium);
+  font-weight: var(--weight--medium);
+  letter-spacing: -2px;
 }
 
 .login .login-container .login-form {
@@ -43,95 +78,64 @@
 .login .login-container .login-form input {
   border: none;
   outline: 0;
-  border-radius: 0.8rem;
-  padding: 1em;
-  color: var(--color--black);
-  font-family: var(--inter);
-  font-size: var(--font--regular);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--color--black);
+  color: var(--color--white);
+  font-size: var(--font--small);
   font-weight: var(--weight--regular);
 }
 
-.login .login-container .login-form input::placeholder {
-  color: var(--color--dark-gray);
-}
-
 .login .login-container .login-form input:not([type='submit']) {
-  background-color: var(--color--light-gray);
-  margin-bottom: 2em;
-  transition: background-color 150ms ease-out;
+  margin-bottom: 2rem;
 }
 
-.login .login-container .login-form input:not([type='submit']):focus {
-  background-color: var(--color--dark-gray);
+.login .login-container .login-form input::placeholder {
+  color: var(--color--light-gray);
 }
 
 .login .login-container .login-form input[type='submit'] {
   cursor: pointer;
-  margin-top: 1em;
-  background-color: var(--color--blue);
-  color: var(--color--white);
-  transition: background-color 200ms ease-out;
-}
-
-.login .login-container .login-form input[type='submit']:hover {
-  background-color: var(--color--dark-gray);
-}
-
-.login .login-background {
-  position: relative;
   background: rgb(0, 128, 255);
   background: linear-gradient(
-    330deg,
+    0deg,
     rgba(0, 128, 255, 1) 0%,
-    rgba(88, 163, 238, 1) 50%
+    rgba(88, 163, 238, 1) 100%
   );
 }
 
-.login .login-background .img-container img {
-  width: 50%;
-  filter: blur(8px);
+.login .login-container .login-form input[type='submit']:hover {
+  background: var(--color--blue);
 }
 
-.login .login-background .img-container img:first-child {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.login .login-background .text-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  padding: 4em;
-}
-
-.login .login-background .text-container .title {
-  color: var(--color--white);
-  font-family: var(--font--main);
-  font-size: var(--font--huge);
-  font-weight: var(--weight--black);
-  margin-bottom: 1em;
-}
-
-.login .login-background .subtitle {
-  color: var(--color--white);
-  font-family: var(--font--main);
-  font-size: var(--font--large);
-  font-weight: var(--weight--bold);
-  margin-bottom: 2em;
-}
-
-.login .login-background .description {
-  color: var(--color--white);
-  font-family: var(--font--main);
-  font-size: var(--font--medium);
-  font-weight: var(--weight--medium);
-}
-
-@media screen and (max-width: 62rem) {
+/* media query */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
   .login {
-    display: block;
+    width: 100%;
+  }
+
+  .login .login-background {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .login .login-background {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .login {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
   }
 
   .login .login-background {
