@@ -2,13 +2,14 @@
   max-width: 80%;
   height: 80%;
   display: flex;
-  background-color: var(--color--dark-gray);
+  background-color: var(--color--light-gray);
   border-radius: 1rem;
   overflow: hidden;
 }
 
 /* background */
 .login .login-background {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,22 +24,35 @@
   color: var(--color--white);
 }
 
+.login .login-background img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: blur(10px);
+  opacity: 0.4;
+}
+
 .login .login-background .title {
   font-family: var(--font--point);
   font-size: var(--font--medium);
   font-weight: var(--weight--medium);
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .login .login-background .subtitle {
   font-size: var(--font--regular);
   font-weight: var(--weight--medium);
   margin-bottom: 1rem;
+  z-index: 1;
 }
 
 .login .login-background .description {
   font-size: var(--font--small);
   font-weight: var(--weight--regular);
+  z-index: 1;
 }
 
 .login .login-container {
@@ -63,7 +77,7 @@
 }
 
 .login .login-container .login-header .logo-title {
-  color: var(--color--white);
+  color: var(--color--black);
   font-family: var(--font--point);
   font-size: var(--font--medium);
   font-weight: var(--weight--medium);
@@ -80,8 +94,8 @@
   outline: 0;
   border-radius: 1rem;
   padding: 1rem;
-  background-color: var(--color--black);
-  color: var(--color--white);
+  background-color: var(--color--white);
+  color: var(--color--black);
   font-size: var(--font--small);
   font-weight: var(--weight--regular);
 }
@@ -91,11 +105,12 @@
 }
 
 .login .login-container .login-form input::placeholder {
-  color: var(--color--light-gray);
+  color: var(--color--dark-gray);
 }
 
 .login .login-container .login-form input[type='submit'] {
   cursor: pointer;
+  color: var(--color--white);
   background: rgb(0, 128, 255);
   background: linear-gradient(
     0deg,
