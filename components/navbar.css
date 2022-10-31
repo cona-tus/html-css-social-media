@@ -1,0 +1,55 @@
+/* navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: rgb(224, 225, 230);
+  background: linear-gradient(
+    0deg,
+    rgba(224, 225, 230, 1) 0%,
+    rgba(242, 243, 247, 1) 100%
+  );
+  border-radius: 2rem 2rem 0 0rem;
+  color: var(--color--black);
+}
+
+.navbar span {
+  cursor: pointer;
+}
+
+.navbar span:hover {
+  color: var(--color--blue);
+}
+
+.navbar .middle {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid var(--color--white);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color--blue);
+}
+
+.navbar .middle:hover {
+  background-color: var(--color--black);
+}
+
+.navbar .middle:hover span {
+  color: var(--color--blue);
+}
+
+.navbar .middle span {
+  color: var(--color--white);
+  font-size: var(--font--large);
+}
