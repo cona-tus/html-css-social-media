@@ -20,26 +20,29 @@
 
 <body class="home-body">
     <section class="home">
-        <header class="home-header">
+        <!-- header -->
+        <header class="header">
             <div class="logo-container">
                 <img class="logo-img" src="./assets/logo.png" alt="logo" />
-                <h1 class="logo-title">Looop</h1>
+                <a href="/" class="logo-title">Looop</a>
             </div>
-            <div class="top-icons">
-                <a href="#">
-                    <span class="material-symbols-outlined">
+            <div class="header-icons">
+                <a class="button--header" href="#">
+                    <span class="material-symbols-outlined icon--header">
                         notifications
                     </span>
                 </a>
-                <a href="./chat.html">
-                    <span class="material-symbols-outlined">
+                <a class="button--header" href="./chat.html">
+                    <span class="material-symbols-outlined icon--header">
                         send
                     </span>
                 </a>
             </div>
         </header>
+
+        <!-- main -->
         <main class="home-main">
-            <section class="recommend-friends">
+            <section class="friends-recommend">
                 <h2 class="category-title">Recommend Friends</h2>
                 <ul class="recommend-list">
                     <li class="recommend short">
@@ -71,14 +74,14 @@
                             alt="recommend friends" />
                         <div class="tags">
                             <span class="hash cook">#cook</span>
-                            <span class="hash baking">#baking</span>
+                            <span class="hash coding">#coding</span>
                         </div>
                     </li>
                     <li class="recommend short">
                         <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                             alt="recommend friends" />
                         <div class="tags">
-                            <span class="hash car">#car</span>
+                            <span class="hash sports">#sports</span>
                             <span class="hash photography">#photography</span>
                         </div>
                     </li>
@@ -121,7 +124,7 @@
                             alt="recommend friends" />
                         <div class="tags">
                             <span class="hash music">#music</span>
-                            <span class="hash baking">#baking</span>
+                            <span class="hash sports">#sports</span>
                         </div>
                     </li>
                     <li class="recommend short">
@@ -139,21 +142,25 @@
                 <ol class="post-list">
                     <li class="post">
                         <div class="user">
-                            <div class="user-info">
-                                <img src="https://images.unsplash.com/photo-1506610154363-2e1a8c573d2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1088&q=80"
+                            <div class="writer-info">
+                                <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
                                     alt="user" />
                                 <div class="writer">
-                                    <p class="username">Emma</p>
-                                    <time class="date">2022-09-14</time>
+                                    <p class="user-name">Emma</p>
+                                    <time class="date-created">2022-09-14</time>
                                 </div>
                             </div>
                             <div class="post-icons">
-                                <span class="material-symbols-outlined">
-                                    favorite
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    send
-                                </span>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        favorite
+                                    </span>
+                                </button>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        send
+                                    </span>
+                                </button>
                             </div>
                         </div>
                         <article class="article">
@@ -168,21 +175,25 @@
                     </li>
                     <li class="post">
                         <div class="user">
-                            <div class="user-info">
+                            <div class="writer-info">
                                 <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1188&q=80"
                                     alt="user" />
                                 <div class="writer">
-                                    <p class="username">Dan</p>
-                                    <time class="date">2022-09-13</time>
+                                    <p class="user-name">Dan</p>
+                                    <time class="date-created">2022-09-13</time>
                                 </div>
                             </div>
                             <div class="post-icons">
-                                <span class="material-symbols-outlined">
-                                    favorite
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    send
-                                </span>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        favorite
+                                    </span>
+                                </button>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        send
+                                    </span>
+                                </button>
                             </div>
                         </div>
                         <article class="article">
@@ -195,21 +206,25 @@
                     </li>
                     <li class="post">
                         <div class="user">
-                            <div class="user-info">
+                            <div class="writer-info">
                                 <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1124&q=80"
                                     alt="user" />
                                 <div class="writer">
-                                    <p class="username">Joanna</p>
-                                    <time class="date">2022-09-12</time>
+                                    <p class="user-name">Joanna</p>
+                                    <time class="date-created">2022-09-12</time>
                                 </div>
                             </div>
                             <div class="post-icons">
-                                <span class="material-symbols-outlined">
-                                    favorite
-                                </span>
-                                <span class="material-symbols-outlined">
-                                    send
-                                </span>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        favorite
+                                    </span>
+                                </button>
+                                <button type="button" class="button--post">
+                                    <span class="material-symbols-outlined icon--post">
+                                        send
+                                    </span>
+                                </button>
                             </div>
                         </div>
                         <article class="article">
@@ -223,14 +238,18 @@
                 </ol>
             </section>
         </main>
+
+        <!-- navbar -->
         <nav class="navbar">
             <span class="material-symbols-outlined">
                 home
             </span>
             <div class="middle">
-                <span class="material-symbols-outlined">
-                    send
-                </span>
+                <a href="./chat.html">
+                    <span class="material-symbols-outlined">
+                        send
+                    </span>
+                </a>
             </div>
             <span class="material-symbols-outlined">
                 person
