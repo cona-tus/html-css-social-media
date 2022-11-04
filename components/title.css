@@ -1,0 +1,11 @@
+.category-title {
+  font-size: var(--font--regular);
+  font-weight: var(--weight--bold);
+  margin: 1rem 0;
+}
+
+.category-subtitle {
+  font-size: var(--font--micro);
+  font-weight: var(--weight--light);
+  margin-bottom: var(--margin--less);
+}

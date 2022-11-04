@@ -1,0 +1,26 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 2rem;
+  margin-right: 0.25em;
+}
+
+.logo-title {
+  color: var(--color--black);
+  font-family: var(--font--point);
+  font-size: var(--font--medium);
+  font-weight: var(--weight--regular);
+  letter-spacing: -2px;
+  transition: color 200ms ease-in-out;
+}
+
+.logo-title:hover {
+  color: var(--color--dark-gray);
+}
+
+.splash-logo {
+  width: 10rem;
+}
