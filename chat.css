@@ -46,30 +46,6 @@
   margin-right: var(--margin--less);
 }
 
-.chat .chat-main .friends-list .friend .friend-img img {
-  width: var(--avatar--regular);
-  border-radius: 50%;
-}
-
-.online,
-.offline {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  bottom: 2px;
-  right: 5px;
-  border-radius: 50%;
-  border: 2.5px solid var(--color--white);
-}
-
-.online {
-  background-color: var(--color--green);
-}
-
-.offline {
-  background-color: var(--color--dark-gray);
-}
-
 .chat .chat-main .friends-list .friend .friend-info {
   width: 100%;
   display: flex;
@@ -127,15 +103,9 @@
   position: relative;
 }
 
-.chat .chat-main .chat-list .chat-user img {
-  width: var(--avatar--small);
-  border-radius: 50%;
-  padding: 0.15em;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background-color: var(--color--white);
-}
-
-.user-info {
+.chat .chat-main .chat-list .chat-user .user-info {
+  display: flex;
+  flex-direction: column;
   margin-left: 0.5em;
 }
 
@@ -173,7 +143,7 @@
 .chat .chat-main .chat-list .chat-message .message-timestamp {
   font-size: var(--font--micro);
   font-weight: var(--weight--light);
-  margin-top: 1em;
+  margin-top: var(--margin--less);
 }
 
 .chat .chat-main .chat-list .chat-message:nth-child(odd) .message-content {
@@ -313,7 +283,7 @@
   background-color: var(--color--white);
   outline: none;
   border: none;
-  border-radius: 1rem;
+  border-radius: var(--border--default);
 }
 
 .chat-form .chat-input::placeholder {
