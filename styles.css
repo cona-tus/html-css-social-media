@@ -1,0 +1,35 @@
+/* common */
+@import './common/box.css';
+@import './common/colors.css';
+@import './common/fonts.css';
+@import './common/reset.css';
+@import './common/size.css';
+
+/* pages */
+@import './login.css';
+@import './home.css';
+@import './chat.css';
+@import './profile.css';
+
+/* components */
+@import './components/avatar.css';
+@import './components/buttons.css';
+@import './components/logo.css';
+@import './components/posts.css';
+@import './components/tags.css';
+@import './components/title.css';
+
+/* layouts */
+@import './layouts/header.css';
+@import './layouts/navbar.css';
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color--white);
+  color: var(--color--black);
+  font-family: var(--font--main);
+}
