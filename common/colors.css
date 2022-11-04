@@ -1,9 +1,30 @@
 :root {
   --color--black: #1b1a1d;
-  --color--dark-gray: #2c2e2f;
-  --color--light-gray: #aaacad;
+  --color--dark-gray: #d7d8de;
+  --color--light-gray: #f2f3f7;
   --color--white: #fefefe;
   --color--blue: #0080ff;
+  --color--navy: #0044b2;
   --color--teal: #00b8c7;
+  --color--dark-green: #007066;
   --color--green: #6ffacc;
+  --color--yellow-green: #61b615;
+  --color--lilac: #6971ec;
+  --color--purple: #8d62d5;
+  --color--magenta: #d172ea;
+  --color--pink: #ff70b7;
+  --color--peach: #ff9382;
+  --color--orange: #ffc761;
+  --color--red: #f54444;
+
+  --gradient--green: linear-gradient(
+    180deg,
+    rgba(0, 128, 255, 1) 0%,
+    rgba(111, 250, 204, 1) 100%
+  );
+  --gradient--blue: linear-gradient(
+    0deg,
+    rgba(0, 128, 255, 1) 0%,
+    rgba(88, 163, 238, 1) 100%
+  );
 }
