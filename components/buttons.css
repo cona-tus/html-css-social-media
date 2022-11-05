@@ -57,7 +57,7 @@ input[type='submit'] {
   margin-right: 0.45em;
 }
 
-.button--icon span:hover {
+.button--icon:hover span {
   color: var(--color--blue);
   transform: scale(1.05);
 }

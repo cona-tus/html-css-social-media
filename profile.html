@@ -6,237 +6,236 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Looop | Profile</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Looop" />
-    <meta property="og:title" content="Looop" />
-    <meta property="og:description" content="Social media App using HTML and CSS" />
-    <meta property="og:image" content="./assets/logo.png" />
-    <meta property="og:url" content="" />
-    <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Looop">
+    <meta property="og:title" content="Looop">
+    <meta property="og:description" content="Social media App using HTML and CSS">
+    <meta property="og:image" content="./assets/logo.png">
+    <meta property="og:url" content="https://conatus-looop.netlify.app/profile.html">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body class="profile-body">
-    <section class="profile">
-        <!-- header -->
-        <header class="header">
-            <div class="logo-container">
-                <img class="logo-img" src="./assets/logo.png" alt="logo" />
-                <a href="./home.html" class="logo-title">Looop</a>
-            </div>
-            <div class="header-icons">
-                <a class="button--border" href="#">
-                    <span class="material-symbols-outlined icon--header">
-                        notifications
-                    </span>
-                </a>
-                <a class="button--border" href="./chat.html">
-                    <span class="material-symbols-outlined icon--header">
-                        send
-                    </span>
-                </a>
-            </div>
-        </header>
+<body class="profile">
+    <!-- header -->
+    <header class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="./assets/logo.png" alt="logo" />
+            <a href="./home.html">
+                <h2 class="logo-title">Looop</h2>
+            </a>
+        </div>
+        <div class="header-icons">
+            <a class="button--border" href="#">
+                <span class="material-symbols-outlined icon--header">
+                    notifications
+                </span>
+            </a>
+            <a class="button--border" href="./chat.html">
+                <span class="material-symbols-outlined icon--header">
+                    send
+                </span>
+            </a>
+        </div>
+    </header>
 
-        <!-- main -->
-        <main class="profile-main">
-            <section class="posts-section">
-                <h2 class="category-title">My Posts</h2>
-                <ol class="post-list grid">
-                    <form class="post-form">
-                        <textarea class="post-textarea" name="post" placeholder="Type here"></textarea>
-                        <input class="button--submit" type="submit" value="Post" />
-                    </form>
-                    <li class="post">
-                        <div class="user">
-                            <div class="writer-info">
-
-                                <div class="writer">
-
-                                    <time class="date-created" datetime="2022-09-12">2022-09-12</time>
-                                </div>
-                            </div>
-                            <div class="post-icons">
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        send
-                                    </span>
-                                </button>
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        edit_square
-                                    </span>
-                                </button>
+    <!-- main -->
+    <main class="profile-main">
+        <section class="posts-section">
+            <h2 class="category-title">My Posts</h2>
+            <ol class="post-list grid">
+                <div class="post-form">
+                    <textarea class="post-textarea" name="post" placeholder="Type here"></textarea>
+                    <input class="button--submit" type="submit" value="Post" />
+                </div>
+                <li class="post">
+                    <div class="user">
+                        <div class="writer-info">
+                            <div class="writer">
+                                <time class="date-created" datetime="2022-09-12">2022-09-12</time>
                             </div>
                         </div>
-                        <article class="article">
-                            <img src="https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                                alt="post" />
-                            <p class="content">Look at this distinguished gentleman, look how he is sitting, yes very
-                                distinguished, hahaha. 😂 </p>
-                        </article>
-                    </li>
-                    <li class="post">
-                        <div class="user">
-                            <div class="writer-info">
-
-                                <div class="writer">
-
-                                    <time class="date-created" datetime="2022-09-10">2022-09-10</time>
-                                </div>
-                            </div>
-                            <div class="post-icons">
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        send
-                                    </span>
-                                </button>
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        edit_square
-                                    </span>
-                                </button>
-                            </div>
+                        <div class="post-icons">
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                            </button>
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    edit_square
+                                </span>
+                            </button>
                         </div>
-                        <article class="article">
-                            <img src="https://images.unsplash.com/photo-1613666517563-d19a4585d1fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
-                                alt="post" />
-                            <p class="content">Do you know that painting with music relieves stress? I mean... yeah! I'm
-                                calm now. What about your own way to get rid
-                                of stress? Let me know.</p>
-                        </article>
-                    </li>
-                    <li class="post">
-                        <div class="user">
-                            <div class="writer-info">
-                                <div class="writer">
-                                    <time class="date-created" datetime="2022-09-08">2022-09-08</time>
-                                </div>
-                            </div>
-                            <div class="post-icons">
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        send
-                                    </span>
-                                </button>
-                                <button type="button" class="button--icon">
-                                    <span class="material-symbols-outlined">
-                                        edit_square
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                        <article class="article">
-                            <img src="https://images.unsplash.com/photo-1562007908-859b4ba9a1a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                                alt="post" />
-                            <p class="content">
-                                I made apple pie. This was my grandmother's special recipe. I hope it becomes one of
-                                your
-                                favorites as well! You have to
-                                serve with whipped cream or ice cream. Enjoy 🍎
-                            </p>
-                        </article>
-                    </li>
-                </ol>
-            </section>
-            <section class="profile-section">
-                <div class="user-profile">
-                    <img class="avatar--big" src="./assets/avatar.png" alt="my avatar" />
-                    <div class="user-info">
-                        <h2 class="user-name">Yeeun
-                            <span class="material-symbols-outlined icon--verified">
-                                verified
-                            </span>
-                        </h2>
-                        <span class="user-id">@cona-tus</span>
                     </div>
+                    <article class="article">
+                        <img src="https://images.unsplash.com/photo-1491485880348-85d48a9e5312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                            alt="post" />
+                        <h3 class="content-title">My lovely cat</h3>
+                        <p class="content">Look at this distinguished gentleman, look how he is sitting, yes very
+                            distinguished, hahaha. 😂 </p>
+                    </article>
+                </li>
+                <li class="post">
+                    <div class="user">
+                        <div class="writer-info">
+                            <div class="writer">
+                                <time class="date-created" datetime="2022-09-10">2022-09-10</time>
+                            </div>
+                        </div>
+                        <div class="post-icons">
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                            </button>
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    edit_square
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <article class="article">
+                        <img src="https://images.unsplash.com/photo-1613666517563-d19a4585d1fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
+                            alt="post" />
+                        <h3 class="content-title">Painting with...</h3>
+                        <p class="content">Do you know that painting with music relieves stress? I mean... yeah! I'm
+                            calm now. What about your own way to get rid
+                            of stress? Let me know.</p>
+                    </article>
+                </li>
+                <li class="post">
+                    <div class="user">
+                        <div class="writer-info">
+                            <div class="writer">
+                                <time class="date-created" datetime="2022-09-08">2022-09-08</time>
+                            </div>
+                        </div>
+                        <div class="post-icons">
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                            </button>
+                            <button type="button" class="button--icon">
+                                <span class="material-symbols-outlined">
+                                    edit_square
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <article class="article">
+                        <img src="https://images.unsplash.com/photo-1562007908-859b4ba9a1a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                            alt="post" />
+                        <h3 class="content-title">Family recipe, here!</h3>
+                        <p class="content">
+                            I made apple pie. This was my grandmother's special recipe. I hope it becomes one of
+                            your
+                            favorites as well! You have to
+                            serve with whipped cream or ice cream. Enjoy 🍎
+                        </p>
+                    </article>
+                </li>
+            </ol>
+        </section>
+        <section class="profile-section">
+            <div class="user-profile">
+                <img class="avatar--big" src="./assets/avatar.png" alt="my avatar" />
+                <div class="user-info">
+                    <h2 class="user-name">Yeeun
+                        <span class="material-symbols-outlined icon--verified">
+                            verified
+                        </span>
+                    </h2>
+                    <span class="user-id">@cona-tus</span>
                 </div>
-
-                <ul class="social-profile">
-                    <li class="social-info">
-                        <p class="num">16</p>
-                        <span class="social-type">Following</span>
-                    </li>
-                    <li class="social-info">
-                        <p class="num">21</p>
-                        <span class="social-type">Followers</span>
-                    </li>
-                    <li class="social-info">
-                        <p class="num">3</p>
-                        <span class="social-type">Posts</span>
-                    </li>
-                </ul>
-                <h3 class="category-subtitle">Selected Tags</h3>
-                <div class="tags-profile">
-                    <span class="hash art">#art</span>
-                    <span class="hash book">#book</span>
-                    <span class="hash coding">#coding</span>
-                </div>
-                <h3 class="category-subtitle">Last Subscription</h3>
-                <ul class="friends-profile">
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                            alt="friend" />
-                    </li>
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                            alt="friend" />
-                    </li>
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80"
-                            alt="friend" />
-                    </li>
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                            alt="friend" />
-                    </li>
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80"
-                            alt="friend" />
-                    </li>
-                    <li class="my-friend">
-                        <img class="avatar--small"
-                            src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                            alt="friend" />
-                    </li>
-                </ul>
-                <h3 class="category-subtitle">My Account</h3>
-                <div class="account-profile">
-                    <a href="#" class="button--letter" type="button" value="edit">Switch to other account</a>
-                    <a href="./index.html" class="button--letter" type="button" value="Log out">Log out</a>
-                </div>
-
-            </section>
-        </main>
-
-        <!-- navbar -->
-        <nav class="navbar">
-            <a class="button--icon" href="./home.html">
-                <span class="material-symbols-outlined">
-                    home
-                </span>
-            </a>
-            <div class="button-container">
-                <a class="button--nav" href="./chat.html">
-                    <span class="material-symbols-outlined">
-                        send
-                    </span>
-                </a>
             </div>
-            <a class="button--icon" href="./profile.html">
+
+            <ul class="social-profile">
+                <li class="social-info">
+                    <p class="num">16</p>
+                    <span class="social-type">Following</span>
+                </li>
+                <li class="social-info">
+                    <p class="num">21</p>
+                    <span class="social-type">Followers</span>
+                </li>
+                <li class="social-info">
+                    <p class="num">3</p>
+                    <span class="social-type">Posts</span>
+                </li>
+            </ul>
+            <h3 class="category-subtitle">Selected Tags</h3>
+            <div class="tags-profile">
+                <span class="hash art">#art</span>
+                <span class="hash book">#book</span>
+                <span class="hash coding">#coding</span>
+            </div>
+            <h3 class="category-subtitle">Last Subscription</h3>
+            <ul class="friends-profile">
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                        alt="friend" />
+                </li>
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                        alt="friend" />
+                </li>
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80"
+                        alt="friend" />
+                </li>
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1541534401786-2077eed87a74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                        alt="friend" />
+                </li>
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80"
+                        alt="friend" />
+                </li>
+                <li class="my-friend">
+                    <img class="avatar--small"
+                        src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                        alt="friend" />
+                </li>
+            </ul>
+            <h3 class="category-subtitle">My Account</h3>
+            <div class="account-profile">
+                <a href="#" class="button--letter">Switch to other account</a>
+                <a href="./index.html" class="button--letter">Log out</a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <a class="button--icon" href="./home.html">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+        </a>
+        <div class="button-container">
+            <a class="button--nav" href="./chat.html">
                 <span class="material-symbols-outlined">
-                    person
+                    send
                 </span>
             </a>
-        </nav>
-    </section>
+        </div>
+        <a class="button--icon" href="./profile.html">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </a>
+    </nav>
 </body>
 
 </html>

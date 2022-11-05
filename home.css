@@ -1,7 +1,3 @@
-.home-body {
-  height: 100%;
-}
-
 .home {
   max-width: 80%;
   height: 100%;
@@ -42,7 +38,7 @@
 }
 
 .home-main .friends-recommend .recommend-list .recommend img {
-  min-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: opacity 200ms ease-in-out;
@@ -136,6 +132,20 @@
     grid-auto-rows: auto;
   }
 
+  .home .home-main .friends-recommend .recommend-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 0.5em;
+  }
+
+  .home-main .friends-recommend .recommend-list .recommend.short {
+    grid-row: span 1;
+  }
+
+  .home-main .friends-recommend .recommend-list .recommend.tall {
+    grid-row: span 1;
+  }
+
   .home .home-main .friends-recommend {
     margin: 0;
     margin-bottom: var(--margin--default);
@@ -158,6 +168,20 @@
   .home .home-main {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+  }
+
+  .home .home-main .friends-recommend .recommend-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 0.5em;
+  }
+
+  .home-main .friends-recommend .recommend-list .recommend.short {
+    grid-row: span 1;
+  }
+
+  .home-main .friends-recommend .recommend-list .recommend.tall {
+    grid-row: span 1;
   }
 
   .home .home-main .friends-recommend {

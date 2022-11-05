@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Looop</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Looop" />
-    <meta property="og:title" content="Looop" />
-    <meta property="og:description" content="Social media App using HTML and CSS" />
-    <meta property="og:image" content="./assets/logo.png" />
-    <meta property="og:url" content="" />
-    <link rel="icon" href="./assets/favicon.ico" />
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Looop | Login</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Looop">
+    <meta property="og:title" content="Looop">
+    <meta property="og:description" content="Social media App using HTML and CSS">
+    <meta property="og:image" content="./assets/logo.png">
+    <meta property="og:url" content="https://conatus-looop.netlify.app/">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -27,12 +29,12 @@
         </aside>
         <section class="login-container">
             <header class="login-header">
-                <img class="logo-img" src="./assets/logo.png" alt="logo" />
-                <h1 class="logo-title">Looop</h1>
+                <img class="logo-img" src="./assets/logo.png" alt="logo /">
+                <h2 class="logo-title">Looop</h2>
             </header>
             <form action="./home.html" method="get" class="login-form">
-                <input name="username" required type="text" placeholder="Username" />
-                <input name="password" required minlength="4" maxlength="8" type="password" placeholder="Password" />
+                <input name="username" type="text" placeholder="Username" value="Yeeun" readonly />
+                <input name="password" required minlength="6" maxlength="8" type="password" placeholder="Password" />
                 <input class="button--submit" type="submit" value="Log in" />
             </form>
         </section>

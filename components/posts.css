@@ -74,3 +74,10 @@
   font-weight: var(--weight--light);
   margin-bottom: var(--margin--less);
 }
+
+.post-list .post .article .content-title {
+  font-family: var(--font--main);
+  font-size: var(--font--small);
+  font-weight: var(--weight--medium);
+  margin-bottom: var(--margin--less);
+}
