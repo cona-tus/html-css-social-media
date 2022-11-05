@@ -63,6 +63,7 @@ input[type='submit'] {
 }
 
 .button--letter {
+  background-color: transparent;
   color: rgba(0, 0, 0, 0.5);
   font-size: var(--font--micro);
   font-weight: var(--weight--regular);
