@@ -1,3 +1,11 @@
+.login-body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .login {
   max-width: 80%;
   height: 80%;
@@ -8,6 +16,8 @@
 }
 
 .login .login-background {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +60,7 @@
   z-index: 1;
 }
 
-.login .login-container {
+.login .login-main {
   width: 100%;
   height: 100%;
   display: flex;
@@ -60,34 +70,34 @@
   padding: 0 4em;
 }
 
-.login .login-container .login-header {
+.login .login-main .login-header {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: var(--margin--default);
 }
 
-.login .login-container .login-form {
+.login .login-main .login-form {
   display: flex;
   flex-direction: column;
 }
 
-.login .login-container .login-form input:not([type='submit']) {
+.login .login-main .login-form input:not([type='submit']) {
   border: none;
-  border-radius: 1rem;
+  border-radius: var(--border--default);
   outline: none;
   margin-bottom: var(--margin--default);
-  padding: 1em;
+  padding: var(--margin--less);
   background-color: var(--color--white);
   font-size: var(--font--small);
   font-weight: var(--weight--regular);
 }
 
-.login .login-container .login-form input:not([type='submit'])::placeholder {
+.login .login-main .login-form input:not([type='submit'])::placeholder {
   color: var(--color--dark-gray);
 }
 
-.login .login-container .login-form input:not([type='submit']):focus {
+.login .login-main .login-form input:not([type='submit']):focus {
   box-shadow: var(--box--shadow);
 }
 
@@ -95,6 +105,8 @@
 @media screen and (min-width: 769px) and (max-width: 1025px) {
   .login {
     width: 100%;
+    max-width: 100%;
+    height: 100%;
   }
 
   .login .login-background {
