@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=0884ff&height=300&section=header&text=Looop&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Social%20media%20App%20using%20HTML%20and%20CSS&descAlignY=55&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=rect&color=0884ff&height=200&section=header&text=Looop&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=45&desc=Social%20media%20App%20using%20HTML%20and%20CSS&descAlignY=70&descAlign=50)
 
 # 소셜 미디어 앱, 루프
 
