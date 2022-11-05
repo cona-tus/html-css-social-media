@@ -34,21 +34,25 @@
 }
 
 .home-main .friends-recommend .recommend-list .recommend .tags {
+  border-radius: var(--border--default);
   transition: opacity 200ms ease-in-out;
 }
 
 .home-main .friends-recommend .recommend-list .recommend img {
   width: 100%;
   height: 100%;
+  border-radius: var(--border--default);
   object-fit: cover;
   transition: opacity 200ms ease-in-out;
 }
 
 .home-main .friends-recommend .recommend-list .recommend:hover img {
+  border-radius: var(--border--default);
   opacity: 0;
 }
 
 .home-main .friends-recommend .recommend-list .recommend:hover .tags {
+  border-radius: var(--border--default);
   opacity: 1;
 }
 
