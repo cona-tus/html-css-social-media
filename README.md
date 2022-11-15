@@ -2,7 +2,7 @@
 
 # 소셜 미디어 앱, 루프
 
-![Looop Image](./assets/looop-device.jpg)
+![Looop Image](./assets/looop-device-copy.jpg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d879ebd0-f008-4380-9b8e-3dbc717d3a8a/deploy-status)](https://app.netlify.com/sites/conatus-looop/deploys)
 
