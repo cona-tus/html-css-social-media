@@ -73,7 +73,7 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 <br/>
 
-Home 화면의 grid는 이미지의 사이즈에 따라 height이 정렬되는 Masonry 레이아웃을 구현하였습니다.
+Home 화면의 Grid는 이미지의 height에 따라 정렬되는 Masonry 레이아웃을 구현하였습니다.
 
 ![Masonry](./assets/looop-masonry.png)
 
