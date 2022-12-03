@@ -2,7 +2,7 @@
 
 # 소셜 미디어 앱, 루프
 
-![Looop Image](./assets/looop-device-copy.jpg)
+![Looop Image](./assets/looop-device-white.jpg)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d879ebd0-f008-4380-9b8e-3dbc717d3a8a/deploy-status)](https://app.netlify.com/sites/conatus-looop/deploys)
 
@@ -41,25 +41,25 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 - Login: 소개문과 로그인 페이지
 
-![Login](./assets/login-screen.jpg)
+![login-page](https://user-images.githubusercontent.com/90844424/205414848-67ba883b-edcb-4586-8a0a-67ad84e54bb0.gif)
 
 <br/>
 
 - Home: 친구 추천과 블로그 포스팅 목록
 
-![Home](./assets/home-screen.jpg)
+![home-page](https://user-images.githubusercontent.com/90844424/205414844-dfe408a0-5290-4e0b-a64e-69652d23c27c.gif)
 
 <br/>
 
 - Chat: 친구 목록과 대화창
 
-![Chat](./assets/chat-screen.jpg)
+![chat-page](https://user-images.githubusercontent.com/90844424/205414842-057bc3ee-b8bb-458a-b907-9ac557cdbfa3.gif)
 
 <br/>
 
 - Profile: 개인 블로그와 프로필 정보
 
-![Profile](./assets/profile-screen.jpg)
+![profile-page](https://user-images.githubusercontent.com/90844424/205414841-c89a8fdb-11d4-4a55-a087-a417c2ba6f0f.gif)
 
 <br/>
 
@@ -67,9 +67,28 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 ### 1. 유연한 반응형 디자인
 
-다양한 디바이스에 적용할 수 있도록 Flex box와 Grid를 활용하였습니다. 또한 고정된 px 단위 대신, 보다 유동적인 rem/em/% 단위를 사용하였습니다.
+다양한 디바이스에 적용될 수 있도록 Flex box와 Grid를 활용하였습니다. 또한 고정된 px 단위 대신, 보다 유동적인 rem/em/% 단위를 사용하였습니다.
 
 ![responsible](https://user-images.githubusercontent.com/90844424/200150552-749a0e62-ad3b-4e03-8bb4-fec71b4b76f3.gif)
+
+Home 화면의 grid는 이미지의 사이즈에 따라 height이 정렬되는 Masonry 레이아웃을 구현하였습니다.
+
+```css
+.recommend-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, auto));
+  grid-auto-rows: auto;
+  grid-gap: var(--margin--less); /* 1em; */
+}
+
+.recommend-list .recommend.short {
+  grid-row: span 1;
+}
+
+.recommend-list .recommend.tall {
+  grid-row: span 2;
+}
+```
 
 <br/>
 
