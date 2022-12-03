@@ -41,25 +41,25 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 - Login: 소개문과 로그인 페이지
 
-![login-page](https://user-images.githubusercontent.com/90844424/205414848-67ba883b-edcb-4586-8a0a-67ad84e54bb0.gif)
+![login-page](https://user-images.githubusercontent.com/90844424/205417727-7593528a-5d38-4243-b247-305a98613696.gif)
 
 <br/>
 
 - Home: 친구 추천과 블로그 포스팅 목록
 
-![home-page](https://user-images.githubusercontent.com/90844424/205414844-dfe408a0-5290-4e0b-a64e-69652d23c27c.gif)
+![home-page](https://user-images.githubusercontent.com/90844424/205417725-4442e5d0-09e7-4304-9697-baa88de6a970.gif)
 
 <br/>
 
 - Chat: 친구 목록과 대화창
 
-![chat-page](https://user-images.githubusercontent.com/90844424/205414842-057bc3ee-b8bb-458a-b907-9ac557cdbfa3.gif)
+![chat-page](https://user-images.githubusercontent.com/90844424/205417721-298c5028-3d83-4579-83a6-56a1dc4423bc.gif)
 
 <br/>
 
 - Profile: 개인 블로그와 프로필 정보
 
-![profile-page](https://user-images.githubusercontent.com/90844424/205414841-c89a8fdb-11d4-4a55-a087-a417c2ba6f0f.gif)
+![profile-page](https://user-images.githubusercontent.com/90844424/205417716-56583572-c2e6-4833-8a72-3ebe441ef52b.gif)
 
 <br/>
 
@@ -71,7 +71,11 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 ![responsible](https://user-images.githubusercontent.com/90844424/200150552-749a0e62-ad3b-4e03-8bb4-fec71b4b76f3.gif)
 
+<br/>
+
 Home 화면의 grid는 이미지의 사이즈에 따라 height이 정렬되는 Masonry 레이아웃을 구현하였습니다.
+
+![Masonry](./assets/looop-masonry.png)
 
 ```css
 .recommend-list {
