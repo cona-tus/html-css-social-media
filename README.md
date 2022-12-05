@@ -41,25 +41,25 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 - Login: 소개문과 로그인 페이지
 
-![login-page](https://user-images.githubusercontent.com/90844424/205417727-7593528a-5d38-4243-b247-305a98613696.gif)
+![login-page](https://user-images.githubusercontent.com/90844424/205599137-9d361422-7c3e-4248-966a-c8acc34b45aa.gif)
 
 <br/>
 
 - Home: 친구 추천과 블로그 포스팅 목록
 
-![home-page](https://user-images.githubusercontent.com/90844424/205417725-4442e5d0-09e7-4304-9697-baa88de6a970.gif)
+![home-page](https://user-images.githubusercontent.com/90844424/205599122-eb8d342e-7a6d-4ed8-912a-34d47290122d.gif)
 
 <br/>
 
 - Chat: 친구 목록과 대화창
 
-![chat-page](https://user-images.githubusercontent.com/90844424/205417721-298c5028-3d83-4579-83a6-56a1dc4423bc.gif)
+![chat-page](https://user-images.githubusercontent.com/90844424/205599117-4621df2b-ba7d-4741-b078-36e50daaca1d.gif)
 
 <br/>
 
 - Profile: 개인 블로그와 프로필 정보
 
-![profile-page](https://user-images.githubusercontent.com/90844424/205417716-56583572-c2e6-4833-8a72-3ebe441ef52b.gif)
+![profile-page](https://user-images.githubusercontent.com/90844424/205599104-5645c422-15b6-4fe1-83e8-854331418e5d.gif)
 
 <br/>
 
@@ -69,7 +69,7 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 다양한 디바이스에 적용될 수 있도록 Flex box와 Grid를 활용하였습니다. 또한 고정된 px 단위 대신, 보다 유동적인 rem/em/% 단위를 사용하였습니다.
 
-![responsible](https://user-images.githubusercontent.com/90844424/200150552-749a0e62-ad3b-4e03-8bb4-fec71b4b76f3.gif)
+![responsible](https://user-images.githubusercontent.com/90844424/205603033-362d19da-6d8b-442a-9285-c3bace72c247.gif)
 
 <br/>
 
