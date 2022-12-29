@@ -1,12 +1,9 @@
-![header](https://capsule-render.vercel.app/api?type=rect&color=0884ff&height=200&section=header&text=Looop&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=45&desc=Social%20media%20App%20using%20HTML%20and%20CSS&descAlignY=70&descAlign=50)
-
 # 소셜 미디어 앱, 루프
 
-![Looop Image](./assets/looop-device-white.jpg)
+![Looop Image](./assets/looop-device.jpg)
+<a href="https://www.freepik.com/free-psd/digital-devices-screen-editable_32084755.htm#query=device&position=11&from_view=search&track=sph">Image by denamorado</a> on Freepik
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d879ebd0-f008-4380-9b8e-3dbc717d3a8a/deploy-status)](https://app.netlify.com/sites/conatus-looop/deploys)
-
-By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d879ebd0-f008-4380-9b8e-3dbc717d3a8a/deploy-status)](https://app.netlify.com/sites/conatus-looop/deploys) | [LiveDemo](https://conatus-looop.netlify.app/)
 
 <br/>
 
@@ -31,9 +28,7 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 ## 🛠 사용 기술
 
-- ![HTML](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-- ![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-- ![Git](https://img.shields.io/badge/Git-f05032?style=for-the-badge&logo=git&logoColor=ffffff)
+![HTML](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Git](https://img.shields.io/badge/Git-f05032?style=for-the-badge&logo=git&logoColor=ffffff)
 
 <br/>
 
@@ -67,13 +62,43 @@ By [cona-tus](https://github.com/cona-tus) | [Demo](https://conatus-looop.netlif
 
 ### 1. 유연한 반응형 디자인
 
-다양한 디바이스에 적용될 수 있도록 Flex box와 Grid를 활용하였습니다. 또한 고정된 px 단위 대신, 보다 유동적인 rem/em/% 단위를 사용하였습니다.
+Flex box와 Grid를 활용하여 화면을 구성하였습니다. 또한 고정된 px 단위 대신, 보다 유동적인 rem/em/% 단위를 사용하여 다양한 디바이스에 적용될 수 있도록 제작하였습니다.
 
 ![responsible](https://user-images.githubusercontent.com/90844424/205603033-362d19da-6d8b-442a-9285-c3bace72c247.gif)
 
+```css
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .home {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 1em 2em;
+  }
+
+  .home-main {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .friends-recommend .recommend-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 0.5em;
+  }
+
+  .recommend-list .recommend.short {
+    grid-row: span 1;
+  }
+
+  .recommend-list .recommend.tall {
+    grid-row: span 1;
+  }
+}
+```
+
 <br/>
 
-Home 화면의 Grid는 이미지의 height에 따라 정렬되는 Masonry 레이아웃을 구현하였습니다.
+Home 화면의 Grid는 시각적인 단조로움을 피하고자 이미지의 height에 따라 정렬되는 Masonry 레이아웃을 구현하였습니다.
 
 ![masonry](./assets/looop-masonry.png)
 
@@ -82,7 +107,7 @@ Home 화면의 Grid는 이미지의 height에 따라 정렬되는 Masonry 레이
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, auto));
   grid-auto-rows: auto;
-  grid-gap: var(--margin--less); /* 1em; */
+  grid-gap: var(--margin--less);
 }
 
 .recommend-list .recommend.short {
